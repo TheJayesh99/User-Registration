@@ -1,7 +1,6 @@
 package com.bridgelabz.userregistration;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class UserRegistration 
 {
@@ -31,8 +30,13 @@ public class UserRegistration
 		String phoneNumber =scanner.next();
 		phoneNumber += scanner.nextLine();
 		details.checkPhoneNUmber(phoneNumber);	
+		
+		//asking Password
+		System.out.println("Enter Password");
+		String password = scanner.next();
+		details.checkPassword(password);
 		scanner.close();
+		
 	}
-
 
 }
